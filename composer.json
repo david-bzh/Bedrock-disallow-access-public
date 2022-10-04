@@ -1,0 +1,22 @@
+{
+    "name": "david-bzh/bedrock-disallow-access-public",
+    "description": "Prevent access to the site for non-logged in users",
+    "type": "wordpress-muplugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "david-bzh",
+            "homepage": "https://github.com/david-bzh"
+        }
+    ],
+    "keywords": [
+      "wordpress",
+      "bedrock"
+    ],
+    "support": {
+      "issues": "https://github.com/david-bzh/bedrock-disallow-access-public/issues"
+    },
+    "require": {
+      "php": ">=7.1"
+    }
+}
