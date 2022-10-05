@@ -12,7 +12,7 @@ add_action(
 	'template_redirect',
 	function () {
 
-		if ( 'staging' === getenv( 'WP_ENV' ) && $_REQUEST['q'] !== 'wp-login.php' && ! is_user_logged_in() ) {
+		if ( 'staging' === getenv( 'WP_ENV' ) && 'wp-login.php' !== $_REQUEST['q'] && ! is_user_logged_in() ) {
 
 			wp_safe_redirect( site_url() . '/wp-login.php?redirect_to=' . home_url( $_SERVER['REQUEST_URI'] ) );
 		}
